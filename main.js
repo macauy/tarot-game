@@ -141,8 +141,6 @@ const cambiarTitulos = (carta, index, jugador) => {
 const verResultados = () => {
   mostrarPantalla('pantalla4')
   
-  console.log(partidaCargada,' hay partida')
-
   if (partidaCargada) 
     btnGuardar.style.display = 'none'
   else
