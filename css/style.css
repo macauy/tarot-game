@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color:#413c7e;
+    max-width: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.container-box {
+    color: #300451;
+    background-color: #d2aa38;
+    width: 75%;
+    min-height: 70%;
+    margin: 10px auto 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.container1 {
+    width: 90%;
+    margin: 25px auto 20px;
+}
+
+.container1 h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #300451;
+    font-family: 'Trispace', sans-serif;
+}
+
+.title {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #d2aa38;
+    font-family: 'Trispace', sans-serif;
+}
+
+.title img {
+    width: 30px;
+    height: 30px    ;
+}
+.inputs {
+    margin-bottom: 50px;
+}
+
+.inputs input[type=text] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 35px;
+    width: 70%;
+    min-width: 110px;
+    border-radius: 5px;
+    padding: 0px 15px;
+    border: 1px solid gray;
+}
+
+.btnPlay {
+    display: inline-block;
+    margin: 20px auto 0;
+    min-width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    color: #eee;
+    font-weight: 700;
+    background: #413c7e;
+    z-index: 3;
+}
+
+
+.scores-accordion {
+    background-color: #c9a133;
+    color: inherit;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .scores-panel {
+    padding: 5px 12px;
+    background-color: inherit;
+    display: block;
+    max-height: 150px;
+    overflow: scroll;
+  }
+
+.scores-accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.scores-accordion-active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.scores-accordion-active {
+    background-color: #bb9324;
+}
+
+#scores ul li {
+    list-style: none;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#413c7e;
+}
+
+.container3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto 15px;
+    text-align: center;
+}
+
+.cartas {
+    width: 75%;
+    margin: 10px auto 10px
+}
+
+
+
+
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 10px auto 10px;
+    padding: 10px;
+}
+
+.result-img{
+    position: absolute;
+}
+
+.cards-mini {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container4 > * {
+    margin-bottom: 10px;
+}
+
+.img-mini {
+    width: 30%;
+    height: 30%;
+}
+
+.imgr{
+    width: 30%;
+    height: 30%;
+    -webkit-animation: 5s logo-spin linear infinite;
+    animation: 5s logo-spin linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+@keyframes logo-spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@-webkit-keyframes logo-spin {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+
+.hidden {
+    display: none;
+}
