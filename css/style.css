@@ -107,7 +107,7 @@ main {
     background-color: inherit;
     display: block;
     max-height: 150px;
-    overflow: scroll;
+    overflow: auto;
   }
 
 .scores-accordion:after {
